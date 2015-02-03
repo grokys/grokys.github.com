@@ -173,7 +173,7 @@ at how many roadblocks were placed in front of me.
 I wonder how a new developer coming to the XAML stack might find it? Apart from the problem of the 
 bugs, the direction seems to have gone away from streamlining the framework and into adding more 
 boilerplate. Unless of course you're willing to use something like Prism, but that itself seems to 
-introduce a number of problems. Of course maybe this is my problem, as a somewhat veteran and this 
-would all make sense to newcomers. 
+introduce a number of problems. Of course maybe this is my problem - being somewhat of a veteran - 
+and this would all make sense to newcomers. 
 
 Maybe if I decide to continue, I will add to this series, but that's all for now. 
