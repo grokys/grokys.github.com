@@ -14,7 +14,8 @@ Store app - especially with the upcoming Windows 10 which will allow Store Apps 
 window and look more like traditional desktop apps.
 
 This blog post is a diary of getting started with Window Store apps from the perspective of a
-relatively seasoned WPF developer. **Spoiler**: It didn't go well.
+relatively seasoned WPF developer. **Spoiler**: It didn't go well. However, I realise that with any
+framework there are roadbumps, so think of this this as a "new user experience evaluation". 
 
 # Background
 
