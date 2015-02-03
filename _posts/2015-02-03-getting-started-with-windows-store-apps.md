@@ -249,14 +249,14 @@ something I never saw in WPF. Starting to look like we didn't have it so bad.
 
 # Adding the start page
 
-## Creating a Circular Button... or not... 
-
 I want a start page like in the Windows 8.1 Reader application that will allow the user to open a
 file:
 
 ![Reader]({{ site.url }}/assets/2015-02-03-getting-started-with-windows-store-apps/reader-start-page.png)
 
 First step is to create a Views folder, and in there create a Blank Page called "StartPage".
+
+## Creating a Circular Button... or not... 
 
 Ok, now to create the circular button. Man, am I looking forward to a better syntax than the 
 [MahApps.Metro syntax](http://stackoverflow.com/a/17765730/6448) for creating circular buttons with 
