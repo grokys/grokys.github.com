@@ -243,8 +243,78 @@ Ok, and now onto... hold on... Ummm... What? You can't find InitializeComponent 
 ![Ummm... What?!]({{ site.url }}/assets/2015-02-03-getting-started-with-windows-store-apps/initialize-component-missing.png)
 
 F6... Ok, you can find it now. It seems that whenever I make an edit in App.xaml.cs it confuses
-intellisense and marks `this.InitializeComponent();` as an error. That's something I never saw in
-WPF. Starting to look like we didn't have it so bad.
+intellisense and marks `this.InitializeComponent();` as an error until I do a build. That's 
+something I never saw in WPF. Starting to look like we didn't have it so bad.
 
 # Adding the start page
 
+## Creating a Circular Button... or not... 
+
+I want a start page like in the Windows 8.1 Reader application that will allow the user to open a
+file:
+
+![Reader]({{ site.url }}/assets/2015-02-03-getting-started-with-windows-store-apps/reader-start-page.png)
+
+First step is to create a Views folder, and in there create a Blank Page called "StartPage".
+
+Ok, now to create the circular button. Man, am I looking forward to a better syntax than the 
+[MahApps.Metro syntax](http://stackoverflow.com/a/17765730/6448) for creating circular buttons with 
+icons in them.
+
+So how do I create one then? It must be one of the first things that the tutorial apps teach you.
+Hmmm... It doesn't seem to be. Ok, here's the [AppBar control](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh781232.aspx) which has circular buttons. I wonder if I can use an AppBarButton?
+
+    <StackPanel Orientation="Horizontal">
+        <AppBarButton Icon="Folder"/>
+        <TextBlock VerticalAlignment="Center" FontSize="21">Browse</TextBlock>
+    </StackPanel>
+
+![Reader]({{ site.url }}/assets/2015-02-03-getting-started-with-windows-store-apps/browse-first-attempt.png)
+
+Ok, that's not bad for a first attempt, but the alignment is all off: there's too much margin around
+the button. Can I change that somehow? Lets look in the template.
+
+    <StackPanel Margin="0,14,0,13" VerticalAlignment="Top">
+        <Grid HorizontalAlignment="Center" Height="40" Margin="0,0,0,5" Width="40">
+            <Ellipse x:Name="BackgroundEllipse" Fill="{ThemeResource AppBarItemBackgroundThemeBrush}" Height="40" UseLayoutRounding="False" Width="40"/>
+            <Ellipse x:Name="OutlineEllipse" Height="40" Stroke="{ThemeResource AppBarItemForegroundThemeBrush}" StrokeThickness="2" UseLayoutRounding="False" Width="40"/>
+            <ContentPresenter x:Name="Content" AutomationProperties.AccessibilityView="Raw" Content="{TemplateBinding Icon}" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Grid>
+        <TextBlock x:Name="TextLabel" Foreground="{ThemeResource AppBarItemForegroundThemeBrush}" FontSize="12" FontFamily="{TemplateBinding FontFamily}" TextAlignment="Center" TextWrapping="Wrap" Text="{TemplateBinding Label}" Width="88"/>
+    </StackPanel>
+
+Oh, no. The margins and sizes are fixed and there's a TextLabel TextBlock in there that is in the
+wrong place taking up space at the bottom. That's obviously not the way forward then. Hold on, I saw 
+in some of the "New Page" templates that they  had a back button with a circle! Lets take a look at 
+one of them. Ok, Add -> New Item -> Basic Page.
+
+![Reader]({{ site.url }}/assets/2015-02-03-getting-started-with-windows-store-apps/missing-files.png)
+
+Uhhh... Not sure what this means, but as I just want to look at the XAML for the page I'll click
+"No".
+
+![Reader]({{ site.url }}/assets/2015-02-03-getting-started-with-windows-store-apps/dont-add-missing-files.png)
+ 
+Okaaayyy... So I told you not to add missing files, but you seem to have gone ahead and added four
+extra files that do I don't know what, and then told me that you can't find a file, which appears
+to be because you're looking in the wrong place... And then when I click on "OK" you bring up the
+"Add New Item" window again for... reason?
+
+The good news is that WPF is starting to look **really polished** in comparison!
+
+Anyway, lets delete those files and look at the XAML for that back button.
+
+    <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+                Style="{StaticResource NavigationBackButtonNormalStyle}"
+                VerticalAlignment="Top"
+                AutomationProperties.Name="Back"
+                AutomationProperties.AutomationId="BackButton"
+                AutomationProperties.ItemType="Navigation Button"/>
+
+Ok, so this isn't how you do it either. There seem to be two styles defined for circular back 
+buttons: `NavigationBackButtonNormalStyle` and `NavigationBackButtonSmallStyle` but they aren't
+at all reusable for creating circular buttons with an arbitrary icon.
+
+Shouldn't this have been easy?
+
+To StackOverflow it is. I guess I'll continue this later.
