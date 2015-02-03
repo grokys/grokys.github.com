@@ -319,3 +319,5 @@ at all reusable for creating circular buttons with an arbitrary icon.
 Shouldn't this have been easy?
 
 To StackOverflow it is. I guess I'll continue this later.
+
+Next Part: [Getting started with Windows Store apps - Part 2]({{ site.url }}/2015/02/03/getting-started-with-windows-store-apps---part-2/)

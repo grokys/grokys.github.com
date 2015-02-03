@@ -1,0 +1,43 @@
+>	Vera.Windows.exe!Vera.App.InitializeComponent.AnonymousMethod__2(object sender, Windows.UI.Xaml.UnhandledExceptionEventArgs e) Line 50	C#
+ 	[Native to Managed Transition]	
+ 	Windows.UI.Xaml.dll!102ca1bd()	Unknown
+ 	[Frames below may be incorrect and/or missing, no symbols loaded for Windows.UI.Xaml.dll]	
+ 	Windows.UI.Xaml.dll!102ca1bd()	Unknown
+ 	Windows.UI.Xaml.dll!102ca2d2()	Unknown
+ 	Windows.UI.Xaml.dll!102de153()	Unknown
+ 	Windows.UI.Xaml.dll!102de093()	Unknown
+ 	Windows.UI.Xaml.dll!102ddd56()	Unknown
+ 	combase.dll!74ede5c7()	Unknown
+ 	Windows.UI.Xaml.dll!102ddbea()	Unknown
+ 	twinapi.appcore.dll!57585479()	Unknown
+ 	twinapi.appcore.dll!575854aa()	Unknown
+ 	twinapi.appcore.dll!5757e2d3()	Unknown
+ 	twinapi.appcore.dll!5757d892()	Unknown
+ 	twinapi.appcore.dll!57582ec2()	Unknown
+ 	twinapi.appcore.dll!57582f31()	Unknown
+ 	combase.dll!74f9ace4()	Unknown
+ 	combase.dll!74f9b2c6()	Unknown
+ 	mscorlib.ni.dll!712f3c9e()	Unknown
+ 	[Managed to Native Transition]	
+ 	mscorlib.dll!System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RoReportUnhandledError(System.Runtime.InteropServices.WindowsRuntime.IRestrictedErrorInfo error)	Unknown
+ 	mscorlib.dll!System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.ReportUnhandledError(System.Exception e)	Unknown
+ 	System.Runtime.WindowsRuntime.dll!System.Threading.WinRTSynchronizationContext.Invoker.InvokeCore()	Unknown
+ 	System.Runtime.WindowsRuntime.dll!System.Threading.WinRTSynchronizationContext.Invoker.InvokeInContext(object thisObj)	Unknown
+ 	mscorlib.dll!System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, object state, bool preserveSyncCtx)	Unknown
+ 	mscorlib.dll!System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, object state, bool preserveSyncCtx)	Unknown
+ 	System.Runtime.WindowsRuntime.dll!System.Threading.WinRTSynchronizationContext.Invoker.Invoke()	Unknown
+ 	[Native to Managed Transition]	
+ 	Windows.UI.dll!56e13fb5()	Unknown
+ 	Windows.UI.dll!56e13fb5()	Unknown
+ 	Windows.UI.dll!56e143ba()	Unknown
+ 	Windows.UI.dll!56e116dc()	Unknown
+ 	Windows.UI.dll!56e1617a()	Unknown
+ 	Windows.UI.Xaml.dll!0ff4e150()	Unknown
+ 	combase.dll!74eb9357()	Unknown
+ 	twinapi.appcore.dll!575562f7()	Unknown
+ 	twinapi.appcore.dll!575561d0()	Unknown
+ 	SHCore.dll!72df5ab3()	Unknown
+ 	kernel32.dll!76c0919f()	Unknown
+ 	ntdll.dll!76f10bbb()	Unknown
+ 	ntdll.dll!76f10b91()	Unknown
+ 	SHCore.dll!72df59d1()	Unknown
