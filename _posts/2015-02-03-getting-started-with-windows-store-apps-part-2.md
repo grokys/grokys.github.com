@@ -8,7 +8,7 @@ tags: [windows-store, c#, .net]
 
 # Where were we?
 
-In the [last post]({{ site.url }}/2015/02/03/getting-started-with-windows-store-apps/) I described 
+In the [last post]({{ site.url }}/getting-started-with-windows-store-apps/) I described 
 getting started with writing a Windows Store app up until I hit the snag of "how to create a round 
 browse button".
 
