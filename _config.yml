@@ -2,7 +2,7 @@
 
 title:            Bad Entropy
 locale:           en_US
-url:              
+url:
 
 
 # Jekyll configuration
@@ -29,16 +29,16 @@ owner:
   name: Steven Kirk
   avatar: bio-photo.jpg
   bio: Preemptive nostalgia of the possible but doubtful.
-  email: 
-  disqus-shortname: 
+  email:
+  disqus-shortname:
   twitter: grokys
   google:
     plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
+    analytics: UA-11482369-4
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
   github: grokys
 
 include: [".htaccess"]
