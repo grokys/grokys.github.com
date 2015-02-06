@@ -4,6 +4,7 @@ title: "The Perspex Eventing System"
 excerpt: "Just about to land on master is an update to the Perspex eventing system. Perspex generally follows WPF quite closely in its eventing, using a routed event model, but this update marks a few deviations away from that of WPF."
 category: Perspex
 tags: [perspex, c#, .net]
+comments: true
 ---
 
 Just about to land on master is an update to the Perspex eventing system. Perspex generally follows
