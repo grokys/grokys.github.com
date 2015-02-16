@@ -7,8 +7,8 @@ tags: [perspex, c#, .net]
 comments: true
 ---
 
-In this post I'm going to explore Perspex's version of the XAML frameworks' `DependencyProperty` -
-`PerspexProperty`.
+In this post I'm going to explore [Perspex](https://github.com/grokys/Perspex/)'s version of the 
+XAML frameworks' `DependencyProperty` - `PerspexProperty`.
 
 # Perspex Properties #
 
