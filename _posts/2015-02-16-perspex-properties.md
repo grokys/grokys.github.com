@@ -158,7 +158,7 @@ Binding in Perspex uses Reactive Extensions' [IObservable](http://msdn.microsoft
 
 {% highlight csharp %}
 control.Bind(BorderProperty, someObject.SomeObservable());
-```
+{% endhighlight %}
 
 Note that because PerspexProperty is typed, we can check that the observable is of the correct type.
 
