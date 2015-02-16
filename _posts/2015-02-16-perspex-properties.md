@@ -144,10 +144,10 @@ private static double CoercePercentage(PerspexObject o, double value)
 {% endhighlight %}
  
 The coercion method must be static, so the object on which the property change has taken place is
-passed as a parameter. Note that you should not assume that the type of the object is the same as
-the type that registered the property as properties can be added to other classes using 
-`PerspexProperty.AddOwner`. If you need to access the object on which the property change has taken
-place you should check the type first.
+passed as a parameter. It's important to note that you should not assume that the type of the object 
+is the same as the type that registered the property as properties can be added to other classes  
+using `PerspexProperty.AddOwner`. If you need to access the object on which the property change has 
+taken place you should check the type first.
 
 Currently coercion cannot be overridden for other classes, this is a limitation that may need to be
 lifted in future. 
@@ -208,7 +208,7 @@ return new Panel
 {% endhighlight %}
 
 This works fine for perspex properties that are exposed as standard .NET properties, but how can we
-make this work for attached properties and bindings. Well, C# 6 introduces a new feature called    
+make this work for attached properties and bindings? Well, C# 6 introduces a new feature called    
 [index initializers](https://roslyn.codeplex.com/wikipage?title=Language%20Feature%20Status&referringTitle=Home)
 which can allow us to do this: 
 
@@ -225,9 +225,9 @@ Nice... Now lets suppose we want to bind a property:
 {% highlight csharp %}
 var control = new Control
 {
-	Property1 = "Foo",
+    Property1 = "Foo",
     [Attached.Property] = "Bar",
-	[!Property2] = something.SomeObservable,
+    [!Property2] = something.SomeObservable,
 }
 {% endhighlight %}
 
@@ -239,9 +239,9 @@ Binding to a property on another control? Easy:
 {% highlight csharp %}
 var control = new Control
 {
-	Property1 = "Foo",
-[Attached.Property] = "Bar",
-	[!Property2] = anotherControl[!Property1],
+    Property1 = "Foo",
+    [Attached.Property] = "Bar",
+    [!Property2] = anotherControl[!Property1],
 }
 {% endhighlight %}
 
@@ -250,14 +250,14 @@ Two way binding? Just add two bangs:
 {% highlight csharp %}
 var control = new Control
 {
-	Property1 = "Foo",
-[Attached.Property] = "Bar",
-	[!!Property2] = anotherControl[!!Property1],
+    Property1 = "Foo",
+    [Attached.Property] = "Bar",
+    [!!Property2] = anotherControl[!!Property1],
 }
 {% endhighlight %}
 
 If you're writing a control template however, you don't want to bind at the LocalValue binding 
-priority, you want to bind using the TemplatedParent binding priority. To do this use the tilde
+priority, you want to bind using the `TemplatedParent` binding priority. To do this use the tilde
 operator instead. Here's an example from `ScrollViewer`'s control template:
 
 {% highlight csharp %}
