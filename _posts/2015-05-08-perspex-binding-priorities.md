@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Perspex Binding Priorities"
-excerpt: "In WPF there is something called [Dependency Property Value Precedence][a9fd6f3f] but it's mostly hidden behind the scenes. However, Perspex has a CSS-style styling system which means that the priorites (or precedence) of bindings become even more important."
+excerpt: "Perspex has a CSS-style styling system which means that binding priorites (or precedence) are very important."
 category: Perspex
 tags: [perspex, c#, .net]
 comments: true
@@ -114,7 +114,7 @@ public enum BindingPriority
 
 This is implemented in Perspex using the `PriorityValue` class. A `PriorityValue` object is created for each property in a `PerspexObject` that has a value set.
 
-In the original implementation `PriorityValue` this was implemented using a linked list of bindings. When a new binding was added to a property, it was added into the linked list before any other bindings with the same priority. The active binding was simply the first binding in the list that didn't return `PerpsexProperty.UnsetValue`. Values that were set using `PerspexObject.SetValue` were simply bindings that produced a single value.
+In the original implementation `PriorityValue` this was implemented using a linked list of bindings. When a new binding was added to a property, it was added into the linked list before any other bindings with the same or higher BindingPriority value. The active binding was simply the first binding in the list that didn't return `PerpsexProperty.UnsetValue`. Values that were set using `PerspexObject.SetValue` were simply bindings that produced a single value.
 
 However you'll notice I'm speaking in the past tense - this system works well enough for the styling example described at the start of the article, but after a while it became clear that it wasn't enough.
 
