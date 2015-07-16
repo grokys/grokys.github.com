@@ -1,0 +1,12 @@
+One thing i'm taking from polymer is that i'm splitting controls into two categories:
+`Perspex.Controls.Core` and `Perspex.Controls.Standard`.
+
+Core controls are non-templated controls that just display simple stuff, like TextBlock, Border etc.
+Standard controls assembly defines the LooklessControl class which adds the templating facility
+
+but also in the core controls i'm adding simple non-styled versions of commonly used controls
+so ItemHost is like a ContentControl except it's not got a templated look - it just creates the DataTemplate directly as a child
+
+it also contains Selector which has a Panel property, and maintains a selection of the children of its Panel
+grokys 21:20
+again: unstyled, so it just adds a selected class - to display the selected item you'd set a style for the selectedclass
