@@ -54,8 +54,8 @@ tb2.BindTwoWay(TextBox.TextProperty, tb1, TextBox.TextProperty);
 tb2.BindTwoWay(TextBox.TextProperty, tb3, TextBox.TextProperty);
 {% endhighlight %}
 
-Here, tb2 should be bound to the Text property of both tb1 and tb2 and so
-all three TextBoxes should stay in sync, however the binding from tb3 was
+Here, `tb2` should be bound to the Text property of both `tb1` and `tb2` and so
+all three TextBoxes should stay in sync, however the binding from `tb3` was
 overriding that from tb1 causing the TextBoxes to get out-of-sync.
 
 The solution I came up with was:
