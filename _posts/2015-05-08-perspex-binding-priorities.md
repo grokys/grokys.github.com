@@ -118,6 +118,6 @@ In the original implementation `PriorityValue` this was implemented using a link
 
 However you'll notice I'm speaking in the past tense - this system works well enough for the styling example described at the start of the article, but after a while it became clear that it wasn't enough.
 
-We'll get into that in the [next installment]({{ site.url }}/perspex-binding-priorities-part-2/).
+We'll get into that in the [next installment]({{ site.url }}/perspex/perspex-binding-priorities-part-2/).
 
 [a9fd6f3f]: https://msdn.microsoft.com/en-us/library/ms743230%28v=vs.110%29.aspx "Dependency Property Value Precedence"

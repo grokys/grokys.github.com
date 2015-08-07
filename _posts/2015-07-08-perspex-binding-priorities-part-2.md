@@ -6,7 +6,7 @@ category: Perspex
 tags: [perspex, c#, .net]
 comments: true
 ---
-In the [last post]({{ site.url }}/perspex-binding-priorities/) I described the
+In the [last post]({{ site.url }}/perspex/perspex-binding-priorities/) I described the
 first attempt at binding priorites in [Perspex](https://github.com/grokys/Perspex/).
 
 To see the problem with this simple system consider the following example:
