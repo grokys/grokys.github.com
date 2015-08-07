@@ -35,4 +35,4 @@ time a binding of the same priority fires.
 And this is the story of how `PriorityValue` became a collection of
 `PriortyLevel`s.
 
-However, this isn't the end of the story...
+[However, this isn't the end of the story...]({{ site.url }}/perspex/perspex-binding-priorities-part-3/)
