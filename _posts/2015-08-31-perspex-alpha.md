@@ -7,7 +7,7 @@ tags: [perspex, c#, .net]
 comments: true
 ---
 
-I'm please to announce that [Perspex](https://github.com/grokys/Perspex/) is now
+I'm pleased to announce that [Perspex](https://github.com/grokys/Perspex/) is now
 in alpha!
 
 Perspex is a multi-platform windowing toolkit - somewhat like WPF - that is
@@ -49,9 +49,13 @@ Well, yes, that is the intention. However unfortunately as of the time of this
 first alpha, Perspex is only shipping with a Windows backend. There *is* a
 Gtk/Cairo backend that's working pretty well (at least on Windows) but it's not
 included in this release due to packaging issues. In addition, the framework did
-work on Linux at one point but with the recent Mono 3.0 something has gone
+work on Linux at one point but with the recent Mono 4.0 something has gone
 wrong, and we need time to work out what that is. Getting Perspex working again
-on non-windows support is the next thing we'll be concentrating on.
+on non-windows support is the next thing we'll be concentrating on. You can
+track the progress on Linux in the [issue on GitHub](https://github.com/grokys/Perspex/issues/78).
+
+Even though it's not quite there yet, the reason it's a close as it is is due to
+the efforts of [ncarillo](https://github.com/ncarrillo) - thanks Nelson!
 
 # OmniXAML
 
