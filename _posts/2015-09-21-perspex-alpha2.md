@@ -7,7 +7,7 @@ tags: [perspex, c#, .net]
 comments: true
 ---
 
-# Alpha 2
+# Alpha 2 
 
 We're pleased to announce that alpha 2 of
 [Perspex](https://github.com/grokys/Perspex/) is now available.
