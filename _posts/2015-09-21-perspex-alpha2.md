@@ -76,6 +76,10 @@ The following new features have been implemented:
 - Canvas (thanks to [Amer Koleci](https://github.com/amerkoleci))
 - Cursor support
 
+## Nightly NuGet packages
+
+We are now hosting nightly NuGet packages on [MyGet](https://www.myget.org/F/perspex-nightly/api/v2/Packages).
+
 ## Join us
 
 If you're wanting to join in, take a look at the [`up-for-grabs` issues on
