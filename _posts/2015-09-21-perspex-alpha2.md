@@ -25,7 +25,7 @@ Here are some of the highlights of this release - we've come a long way in the
 got a basic designer for Visual Studio working. It's still early days and not
 everything is supported yet, but it's a massive step towards a user-friendly
 designer experience with Perspex. Take a look at the video above to see it in
-action or download the [VS Plugin](https://visualstudiogallery.msdn.microsoft.com/87db356c-cec9-4a07-b7db-a4ed8a921ac9)
+action or download the [VS Plugin](https://visualstudiogallery.msdn.microsoft.com/a4542e8a-b56c-4295-8df1-7e220178b873)
 
 ## Styles in XAML
 
