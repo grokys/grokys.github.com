@@ -7,7 +7,7 @@ tags: [perspex, c#, .net]
 comments: true
 ---
 
-# Alpha 2 
+# Alpha 2
 
 We're pleased to announce that alpha 2 of
 [Perspex](https://github.com/grokys/Perspex/) is now available.
@@ -33,7 +33,7 @@ action or download the [VS Plugin](https://visualstudiogallery.msdn.microsoft.co
 
 We've added support for expressing styles in XAML.
 
-{% highlight xaml %}
+{% highlight xml %}
 <StackPanel>
   <StackPanel.Styles>
     <Style Selector="Button:pointerover">
