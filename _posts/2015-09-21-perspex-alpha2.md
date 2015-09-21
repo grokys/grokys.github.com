@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Perspex is Now in Alpha"
+title: "Perspex Alpha 2"
 excerpt: "Alpha 2 of Perspex is now out."
 category: Perspex
 tags: [perspex, c#, .net]
@@ -46,7 +46,7 @@ We've added support for expressing styles in XAML.
 
 To see more examples of what you can do with Perspex styles, [check out the documentation](https://github.com/Perspex/Perspex/blob/master/docs/styles.md)
 
-Of course, our XAML support is only available thanks to [OmniXAML](https://github.com/superjmn/omnixaml) - check it out!
+Of course, our XAML support is only available thanks to [OmniXAML](https://github.com/superjmn/omnixaml)!
 
 ## \*Nix support
 
