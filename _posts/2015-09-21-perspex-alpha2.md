@@ -21,7 +21,7 @@ Here are some of the highlights of this release - we've come a long way in the
 
 ## Visual Studio Designer
 
-[Nikita Tsukanov](https://github.com/kekekeks) has done the impossible and
+[Nikita Tsukanov](https://github.com/kekekeks) and [Darnell Williams](https://github.com/ImaBrokeDude) have done the impossible and
 got a basic designer for Visual Studio working. It's still early days and not
 everything is supported yet, but it's a massive step towards a user-friendly
 designer experience with Perspex. Take a look at the video above to see it in
