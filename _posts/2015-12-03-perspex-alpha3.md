@@ -8,7 +8,7 @@ comments: true
 ---
 
 We're pleased to announce that alpha 3 of
-[Perspex](https://github.com/grokys/Perspex/) is now available.
+[Perspex](https://github.com/Perspex/Perspex/) is now available.
 
 Perspex is a cross platform .NET UI framework inspired by WPF, with XAML, data
 binding, lookless controls and much more. Take a look at the video to see our
