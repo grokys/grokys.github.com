@@ -42,13 +42,13 @@ traditional XAML binding:
 
 You can now bind to controls:
 
-{% highlight xaml %}
+{% highlight xml %}
     <TextBox Text={Binding ElementName=other, Path=Text}
 {% endhighlight %}
 
 But in addition we also have the shorthand form of:
 
-{% highlight xaml %}
+{% highlight xml %}
     <TextBox Text={Binding #other.Text}
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ Ever lamented the hoops you have to jump though in XAML to negate a binding?
 Well we feel your pain and now you can negate bindings just by adding a `!`
 to the binding path:
 
-{% highlight xaml %}
+{% highlight xml %}
     <TextBlock IsVisible="{Binding Loading}">Loading...</TextBlock>
     <!-- We can negate the Loading property here using a '!' -->
     <ContentPresenter Content="{Binding}" IsVisible="{Binding !Loading}"/>
