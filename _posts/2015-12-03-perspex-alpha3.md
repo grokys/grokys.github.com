@@ -14,7 +14,7 @@ Perspex is a cross platform .NET UI framework inspired by WPF, with XAML, data
 binding, lookless controls and much more. Take a look at the video to see our
 current progress:
 
-[![Perspex Alpha 3](({{ site.url }}/images/2015-12-03-perspex-alpha3/video-thumb.png)](https://www.youtube.com/watch?v=NJ9-hnmUbBM "Perspex Alpha 3")
+[![Perspex Alpha 3]({{ site.url }}/images/2015-12-03-perspex-alpha3/video-thumb.png)](https://www.youtube.com/watch?v=NJ9-hnmUbBM "Perspex Alpha 3")
 
 Get the alpha through [NuGet](https://www.nuget.org/packages/perspex) and
 [download our Visual Studio extension](https://visualstudiogallery.msdn.microsoft.com/a4542e8a-b56c-4295-8df1-7e220178b873) to get started.
