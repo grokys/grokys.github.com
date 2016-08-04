@@ -11,8 +11,9 @@ We're pleased to announce that alpha 4 of
 [Avalonia](https://github.com/AvaloniaUI/Avalonia) is now available.
 
 Avalonia is a cross platform .NET UI framework inspired by WPF, with XAML, data
-binding, lookless controls and much more. Take a look at the video to see our
-current progress:
+binding, lookless controls and much more. Avalonia is the only way to bring
+XAML-based applications to Windows, Mac and Linux (and we have experimental
+mobile support too!)
 
 This is the first release of Avalonia after it was renamed from Perspex! We did
 this due to potential trademark issues with the name Perspex.
