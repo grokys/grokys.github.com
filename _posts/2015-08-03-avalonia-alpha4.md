@@ -59,6 +59,13 @@ This differs somewhat from the standard XAML `Resources` collection which is
 defined at a control level rather than a style level. To read about the
 reasoning behind this, see [this issue comment](https://github.com/AvaloniaUI/Avalonia/issues/462#issuecomment-191849723).
 
+# Skia backend
+
+Work is underway to add a Skia backend using [Skia#](https://github.com/mono/SkiaSharp)
+which will hopefully replace our Cairo backend for non-Windows platforms.
+[Skia](https://skia.org/) is a modern 2D graphics API that better fits
+Avalonia's drawing model than Cairo and also works on mobile platforms.
+
 # AppBuilder
 
 The `Application` was previously semi-platform-specific in that if you wanted to
