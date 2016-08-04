@@ -132,9 +132,16 @@ up of our designer UI, bringing a familiar look and feel:
 In addition, [Nikita Tsukanov](https://github.com/kekekeks) implemented support
 for editing XAML files in dlls and PCLs.
 
+# XAML Behaviors
+
+[Wiesław Šoltés](https://github.com/wieslawsoltes) has ported [UWP's behaviors
+to Avalonia](https://github.com/XamlBehaviors/XamlBehaviors). XAML Behaviors are
+an easy-to-use means of adding common and reusable interactivity to your
+Avalonia applications with minimal code.
+
 # Documentation
 
-[Wiesław Šoltés](https://github.com/wieslawsoltes) set up a
+[Wiesław Šoltés](https://github.com/wieslawsoltes) has also set up a
 [DocFX](https://github.com/dotnet/docfx) powered documentation site which you
 can see at http://avaloniaui.github.io/. There's still a lot to do on
 documentation; we especially need some tutorials on getting started but this is
