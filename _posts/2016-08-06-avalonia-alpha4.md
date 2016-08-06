@@ -137,6 +137,8 @@ var fileNames = await dialog.ShowAsync();
 [Abdelkarim Sellamna](https://github.com/abdelkarim) started a nice clean
 up of our designer UI, bringing a familiar look and feel:
 
+![Designer]({{ site.url }}/images/2016-08-06-avalonia-alpha4/designer.png)
+
 In addition, [Nikita Tsukanov](https://github.com/kekekeks) implemented support
 for editing XAML files in dlls and PCLs.
 
@@ -146,14 +148,6 @@ for editing XAML files in dlls and PCLs.
 to Avalonia](https://github.com/XamlBehaviors/XamlBehaviors). XAML Behaviors are
 an easy-to-use means of adding common and reusable interactivity to your
 Avalonia applications with minimal code.
-
-# Documentation
-
-[Wiesław Šoltés](https://github.com/wieslawsoltes) has also set up a
-[DocFX](https://github.com/dotnet/docfx) powered documentation site which you
-can see at http://avaloniaui.github.io/. There's still a lot to do on
-documentation; we especially need some tutorials on getting started but this is
-the beginning of a long road!
 
 # Thanks for Reading!
 
