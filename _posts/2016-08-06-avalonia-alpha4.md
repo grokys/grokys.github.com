@@ -2,7 +2,7 @@
 layout: post
 title: "Avalonia Alpha 4"
 excerpt: "Alpha 3 of Avalonia (formerly Perspex) is now out."
-category: Avalonia, Perspex
+category: Avalonia
 tags: [avalonia, perspex, c#, .net]
 comments: true
 ---
