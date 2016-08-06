@@ -19,7 +19,7 @@ This is the first release of Avalonia after it was renamed from Perspex! We did
 this due to potential trademark issues with the name Perspex.
 
 Get the release through [NuGet](https://www.nuget.org/packages/avalonia) and
-[download our Visual Studio extension](https://visualstudiogallery.msdn.microsoft.com/59a89da8-eeca-4312-8b99-c4b0a4c0e73f) to get started.
+[download our Visual Studio extension](https://visualstudiogallery.msdn.microsoft.com/e1c6ae1f-6fd9-467d-8f62-1e28b4225213) to get started.
 
 Here's the big features in this release - a lot of improvements have been made
 everywhere but these are the big hitters:
