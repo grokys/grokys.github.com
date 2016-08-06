@@ -79,7 +79,7 @@ entrypoint and will configure the platform-specific parts of the `Application`.
 This means that you typical Avalonia program's entrypoint will now look
 something like this for desktop applications:
 
-```C#
+```csharp
 static void Main(string[] args)
 {
     AppBuilder.Configure<App>()
@@ -90,7 +90,7 @@ static void Main(string[] args)
 
 While iOS applications will be configured using something like:
 
-```C#
+```csharp
 AppBuilder.Configure<App>()
     .UseiOS()
     .UseSkiaViewHost()
@@ -106,7 +106,7 @@ supported but we hope to extend support to `IDataErrorInfo` and
 `System.ComponentModel.DataAnnotations` soon. To enable data validation, set
 the binding's `EnableValidation` property to `true`:
 
-```XAML
+```xml
 <TextBox Text="{Binding Path=Value, EnableValidation=True}"/>
 ```
 
@@ -117,7 +117,7 @@ for window icons. The following example loads the icon for a window from a
 [Manifest Resource](https://msdn.microsoft.com/en-us/library/wwtazz9d.aspx)
 called `test_icon.ico`.
 
-```XAML
+```xml
 <Window Icon="resm:test_icon.ico"/>
 ```
 
@@ -127,7 +127,7 @@ called `test_icon.ico`.
 [Dan Walmsley](https://github.com/danwalmsley)  implemented system Dialogs
 for File Open, Choosing a Directory and File Save. An example:
 
-```C#
+```csharp
 var dialog = new OpenFileDialog();
 var fileNames = await dialog.ShowAsync();
 ```
