@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Avalonia Alpha 4"
-excerpt: "Alpha 3 of Avalonia (formerly Perspex) is now out."
+excerpt: "Alpha 4 of Avalonia (formerly Perspex) is now out."
 category: Avalonia
 tags: [avalonia, perspex, c#, .net]
 comments: true
