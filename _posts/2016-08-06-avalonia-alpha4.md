@@ -47,7 +47,7 @@ DPI when it's dragged to another monitor with different DPI settings.
 You can now include resources such as brushes and colors in styles so that they
 don't need to be hardcoded each time they're used:
 
-```XAML
+```xml
 <Style>
   <Style.Resources>
     <SolidColorBrush x:Key="ThemeBackgroundBrush">#FFFFFFFF</SolidColorBrush>
