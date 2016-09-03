@@ -7,8 +7,6 @@ tags: [avalonia, c#, .net]
 comments: true
 ---
 
-# Avalonia Logical Tree Weirdness
-
 Avalonia has a similar concept of logical and visual trees to other XAML frameworks such as WPF,
 UWP and Silverlight. However when you take a careful look at the logical tree, it can be seen to
 function a little strangely at times!
@@ -69,4 +67,5 @@ The way this works in Avalonia is that as suggested above, the `TextBlock`s are 
 the logical tree outside the `ItemsControl` template, the `StackPanel` effectively doesn't exist.
 
 What this means is that the logical tree isn't commutative - traversing down the logical tree may
-not give the same results as traversing it the other way!
+not give the same results as traversing it the other way! The visual tree does have this problem
+of course so everything is a lot simpler there.
