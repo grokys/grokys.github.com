@@ -7,8 +7,6 @@ tags: [github, ghfvs, visualstudio, c#, .net]
 comments: true
 ---
 
-# Supporting Multiple Visual Studio Versions in a Single Package
-
 A few people [have](https://github.com/github/VisualStudio/issues/828) [asked](https://gitter.im/github/VisualStudio) how we support both Visual Studio 2015 and Visual Studio 2017 in the [GitHub Extension for Visual Studio](https://github.com/github/VisualStudio). In particular we needed to support Team Foundation 14 and 15, and we wanted to do it from a single package.
 
 >  It's important to note that although each new version of Visual Studio [includes](https://www.nuget.org/packages/Microsoft.VisualStudio.Shell.Interop.12.0) all the previous [versions](https://www.nuget.org/packages/Microsoft.VisualStudio.Shell.Interop.11.0) of [assemblies](https://www.nuget.org/packages/Microsoft.VisualStudio.Shell.Interop.10.0) of many core APIs, Team Explorer is an extension and so a single version is installed.
