@@ -9,9 +9,9 @@ comments: true
 
 We’re pleased to announce that alpha 5 of [Avalonia](https://github.com/AvaloniaUI/Avalonia) is now available.
 
-Avalonia is a cross platform .NET UI framework inspired by WPF, with XAML, data binding, lookless controls and much more. Avalonia is the only way to bring XAML-based applications to Windows, Mac and Linux. We also have experimental mobile support but unfortunately it's lacking maintainers right now and so has been disabled for this release.
+Avalonia is a cross platform .NET UI framework inspired by WPF, with XAML, data binding, lookless controls and much more. Avalonia is the only way to bring XAML-based applications to Windows, Mac and Linux. We also have experimental mobile support!
 
-You can get started by using the [Visual Studio plugin](https://marketplace.visualstudio.com/items?itemName=SJKirk.AvaloniaforVisualStudio) which contains templates for creating Avalonia applications and a (basic) designer, and you can browse our [NuGet packages](https://www.nuget.org/packages?q=Tags%3A%22Avalonia%22)
+You can get started by using the [Visual Studio plugin](https://visualstudiogallery.msdn.microsoft.com/b2203c92-2110-415b-b935-fcc01cf354f8?) which contains templates for creating Avalonia applications and a (basic) designer, and you can browse our [NuGet packages](https://www.nuget.org/packages?q=Tags%3A%22Avalonia%22). Please note that due to the clusterf#$k that are MS accounts we've had to re-upload the extension with a new identity (yet again), so if you have the old version installed you will have to manually uninstall and reinstall the new version.
 
 Here are the new features in Alpha 5:
 
@@ -19,6 +19,39 @@ Here are the new features in Alpha 5:
 
 Support for .NET core has landed! There are now two sets of desktop application templates in our extension, .NET Framework and .NET Core (we hope the merge these in the future) and we've started working on templates for `dotnet` which you can find [here](https://github.com/AvaloniaUI/avalonia-dotnet-templates). Many of our libraries now target .NET standard, and more will do so in future.
 
+# Updated Mobile Platform Integration
+
+We no longer pretend that desktop-like Window is a thing on mobile platforms (previously we had a singleton WindowImpl that mostly consisted of stubs). Instead we now provide an `AvaloniaView` class that derives from a native view and has `Content` property which can hold Avalonia controls. You can use this view in any way you want. We also provide `AvaloniaActivity` for Android and `AvaloniaWindow` (`UIWindow` with predefined associated `RootViewController`) for iOS for convenience purposes, both of which also have Content property.
+
+Mobile integration now looks something like this:
+
+```c#
+public override bool FinishedLaunching(UIApplication uiapp, NSDictionary options)
+{
+	AppBuilder.Configure<App>()
+		.UseiOS()
+		.UseSkia().SetupWithoutStarting();
+	Window = new AvaloniaWindow() {Content = new YOUR_CONTROL_HERE(){DataContext = ...}};
+	Window.MakeKeyAndVisible();
+	return true;
+}
+```
+```c#
+public class MainActivity : AvaloniaActivity
+{
+    protected override void OnCreate(Bundle savedInstanceState)
+    {
+        if (Avalonia.Application.Current == null)           
+        {
+            AppBuilder.Configure(new App())
+                .UseAndroid()
+                .SetupWithoutStarting();
+        }
+        Content = YOUR_CONTROL_HERE(){DataContext = ...};
+        base.OnCreate(savedInstanceState);
+    }
+}
+```
 # Linux FrameBuffer Support
 
 We now have initial support for running Avalonia directly over a [Linux framebuffer](https://github.com/AvaloniaUI/Avalonia/tree/master/src/Linux/Avalonia.LinuxFramebuffer).
@@ -58,4 +91,4 @@ There have been many bugfixes by many contributors in this release - thanks to [
 Please file any bugs you find on [our issue tracker](https://github.com/AvaloniaUI/Avalonia/issues) and come join us in our
 [Gitter room](https://gitter.im/AvaloniaUI/Avalonia).
 
-We're looking for maintainers for our visual studio plugin and for our mobile ports. If you think you can help, please let us know in our gitter room!
+We're always looking for contributors - if you think you can help, please let us know in our gitter room!
