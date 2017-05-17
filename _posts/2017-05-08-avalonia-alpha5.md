@@ -7,6 +7,8 @@ tags: [avalonia, c#, .net]
 comments: true
 ---
 
+![Screenshot](https://hsto.org/web/54e/a14/77a/54ea1477ade448b796faed08780eb972.png)
+
 We’re pleased to announce that alpha 5 of [Avalonia](https://github.com/AvaloniaUI/Avalonia) is now available.
 
 Avalonia is a cross platform .NET UI framework inspired by WPF, with XAML, data binding, lookless controls and much more. Avalonia is the only way to bring XAML-based applications to Windows, Mac and Linux. We also have experimental mobile support!
