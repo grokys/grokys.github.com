@@ -19,6 +19,13 @@ Here are the new features in Alpha 5:
 
 Support for .NET core has landed! There are now two sets of desktop application templates in our extension, .NET Framework and .NET Core (we hope the merge these in the future) and we've started working on templates for `dotnet` which you can find [here](https://github.com/AvaloniaUI/avalonia-dotnet-templates). Many of our libraries now target .NET standard, and more will do so in future.
 
+# GTK3 backend
+
+We are now using P/Invoke based GTK3 backend instead of GTK#. Two main issues with GTK# are incompatibility with .NET Core and the need of additional native libraries that have to be built for each Linux distro. As a bonus point we now have a proper support for smooth scrolling on linix/osx.
+
+On OSX it's now needed to install `gtk+3` package from `brew`. We are planning to create a native OSX backend, since with .NET Core 2.0 it's now possible to [run MonoMac-based applications on .NET Core](https://www.youtube.com/watch?v=edgosMqgcBc)
+
+
 # Updated Mobile Platform Integration
 
 We no longer pretend that desktop-like Window is a thing on mobile platforms (previously we had a singleton WindowImpl that mostly consisted of stubs). Instead we now provide an `AvaloniaView` class that derives from a native view and has `Content` property which can hold Avalonia controls. You can use this view in any way you want. We also provide `AvaloniaActivity` for Android and `AvaloniaWindow` (`UIWindow` with predefined associated `RootViewController`) for iOS for convenience purposes, both of which also have Content property.
