@@ -12,7 +12,7 @@ There have been a few architectural changes in this release that we hope will ai
 
 - We are now on the .NET Standard 2.0 platform
 - We're now using [Portable.Xaml](https://github.com/cwensley/Portable.Xaml) as our XAML parser
-- We've removed support for Cairo and GTK2 - you should now use Skia and GTK3 for non-windows platforms
+- We've removed support for Cairo and GTK2 - you should now use the Skia and GTK3 or MonoMac backends for non-windows platforms
 - We're now using ReactiveUI 8 rather than shipping our own fork
 
 So here's some of the major features in this release:
@@ -24,6 +24,10 @@ We were previously rendering the entire window each time something changed, whic
 This greatly improves our rendering performance - particularly when animations are involved - and also gives us proper hit-testing of controls.
 
 The old renderer is still available as the `ImmediateRenderer` class for those folks who want to render everything every frame.
+
+## Monomac-based Backend
+
+[#1005](https://github.com/AvaloniaUI/Avalonia/pull/1005) introduced a new Monomac-based backend for Mac OSX platforms. Previously one would use the GTK2 or GTK3 backends on OSX, but now the default is closed to the metal!
 
 ## Relative Source Syntax Sugar
 
