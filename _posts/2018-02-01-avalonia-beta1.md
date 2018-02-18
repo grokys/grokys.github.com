@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Avalonia Beta 1"
+excerpt: "We’re pleased to announce that Beta 1 of Avalonia is now available."
+category: Avalonia
+tags: [avalonia, c#, .net]
+comments: true
+---
+
 # Avalonia Beta 1
 
 We’re pleased to announce that Beta 1 of [Avalonia](https://github.com/AvaloniaUI/Avalonia) is now available.
