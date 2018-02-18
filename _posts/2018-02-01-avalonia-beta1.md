@@ -6,7 +6,9 @@ Avalonia is a cross platform .NET UI framework inspired by WPF, with XAML, data 
 
 We've decided that we're now at a stage where we're happy to come out of Alpha and call our current state Beta! People are already creating awesome applications with Avalonia, such as [Avalon Studio](https://github.com/VitalElement/AvalonStudio) - an IDE Avalonia and [Core2D](https://github.com/wieslawsoltes/Core2D) - a data-driven 2D diagram editor, and this represents the first step towards getting the framework production-ready.
 
-That's not to say there's not a lot still left to do - there is, most notably our documentation! Getting started with Avalonia is still difficult due to our lack of documentation and we hope to start putting some more time into documentation moving forward.
+That's not to say there's not a lot still left to do - there is, most notably our documentation! Getting started with Avalonia is still difficult due to our lack of documentation and we hope to start putting some more time into documentation moving forward. Anticipating this, we've now got a site up at http://avaloniaui.net/  with s
+
+The easiest way to get started with Avalonia is to install our [Visual Studio plugin](https://marketplace.visualstudio.com/items?itemName=AvaloniaTeam.AvaloniaforVisualStudio) and use the templates we provide there or use our [.NET core templates](https://github.com/AvaloniaUI/avalonia-dotnet-templates). Check out our [samples](https://github.com/AvaloniaUI/Avalonia/tree/master/samples) for some examples of how to get started writing an application.
 
 There have been a few architectural changes in this release that we hope will aid us moving forward:
 
@@ -14,6 +16,7 @@ There have been a few architectural changes in this release that we hope will ai
 - We're now using [Portable.Xaml](https://github.com/cwensley/Portable.Xaml) as our XAML parser
 - We've removed support for Cairo and GTK2 - you should now use the Skia and GTK3 or MonoMac backends for non-windows platforms
 - We're now using ReactiveUI 8 rather than shipping our own fork
+- We've created the [avaloniaui.net](http://avaloniaui.net/) site which, although very bare-bones at the moment, we hope to grow into a decent source of documentation
 
 So here's some of the major features in this release:
 
@@ -66,7 +69,9 @@ Now Avalonia has new syntax to achieve this without the verbosity:
 
 ## Remoting and New Previewer
 
-TODO
+[#1105](https://github.com/AvaloniaUI/Avalonia/pull/1105) introduced a new previewer architecture which should allow us to make designers for non-windows platforms. The previous previewer used win32 API voodoo to reparent the window of the application into the designer. The new previewer architecture instead uses a TCP transport protocol which communicates between the application and the designer in a platform-independent manner.
+
+The [AvaloniaVS](https://marketplace.visualstudio.com/items?itemName=AvaloniaTeam.AvaloniaforVisualStudio) extension has already been updated to use this new protocol, and hopefully now designers for other IDEs will be coming soon!
 
 ## StaticResource and DynamicResource
 
