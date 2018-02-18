@@ -7,8 +7,6 @@ tags: [avalonia, c#, .net]
 comments: true
 ---
 
-# Avalonia Beta 1
-
 We’re pleased to announce that Beta 1 of [Avalonia](https://github.com/AvaloniaUI/Avalonia) is now available.
 
 Avalonia is a cross platform .NET UI framework inspired by WPF, with XAML, data binding, lookless controls and much more. Avalonia is the only way to bring XAML-based applications to Windows, Mac and Linux.
